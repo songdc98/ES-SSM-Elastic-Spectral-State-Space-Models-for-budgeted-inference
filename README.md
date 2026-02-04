@@ -10,7 +10,7 @@ This repo provides a **clean, auditable reference implementation** of **ES-SSM**
 
 ---
 
-## What ES-SSM does (in one paragraph)
+## What ES-SSM does 
 
 ES-SSM represents long-range sequence operators in a **fixed spectral basis** (Hankel-derived features) and learns to **mix spectral channels** with an input-adaptive gate.
 At inference time, you enforce a runtime budget by activating only the first **K** spectral channels (K ≤ K̄).
