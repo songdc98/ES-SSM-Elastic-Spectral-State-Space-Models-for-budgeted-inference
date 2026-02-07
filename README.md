@@ -36,3 +36,16 @@ This makes the trained weights robust to **prefix truncation at deployment**, en
 
 ### 4) Spectral features computed efficiently (FFT)
 Spectral convolutions are computed via FFT and chunked over channels, so runtime scales with K in a controlled way.
+
+
+## Citation
+
+If you use this code, please cite the paper:
+
+```bibtex
+@article{song2026elastic,
+  title={Elastic Spectral State Space Models for Budgeted Inference},
+  author={Song, Dachuan and Wang, Xuan},
+  journal={arXiv preprint arXiv:2601.22488},
+  year={2026}
+}
