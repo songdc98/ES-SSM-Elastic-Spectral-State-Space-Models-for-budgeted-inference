@@ -1,15 +1,6 @@
 # ES-SSM-Elastic-Spectral-State-Space-Models-for-budgeted-inference
 The implementation of Elastic Spectral State Space Models for budgeted inference.
 
-**Train once at full spectral capacity K̄, deploy at any runtime budget K ≤ K̄ — with the same trained weights.**
-
-This repo provides a **clean, auditable reference implementation** of **ES-SSM** (Elastic Spectral State Space Models) with a **PG19 byte-level language modeling** pipeline designed for **budgeted inference**:
-- **one model**
-- **many runtime budgets**
-- **predictable compute scaling with K**
-
----
-
 ## What ES-SSM does 
 
 ES-SSM represents long-range sequence operators in a **fixed spectral basis** (Hankel-derived features) and learns to **mix spectral channels** with an input-adaptive gate.
