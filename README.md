@@ -23,7 +23,7 @@ Practically, this stabilizes training under budget dropout and makes the **BPB v
 ### 3) Budget dropout training (single model, many budgets)
 During training, we **randomly sample a training budget K_train ≤ K̄** at each update and execute the **same budgeted forward pass** as in inference (i.e., masked normalization over `1..K_train`).
 Inactive channels (`k > K_train`) receive **zero gradient** on that update, while shared components (e.g., the gate network and the direct term) are updated every step.
-This makes the trained weights robust to **prefix truncation at deployment**, enabling reliable accuracy–compute trade-offs from a single training run.
+
 
 ### 4) Spectral features computed efficiently (FFT)
 Spectral convolutions are computed via FFT and chunked over channels, so runtime scales with K in a controlled way.
